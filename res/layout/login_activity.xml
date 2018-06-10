@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="260dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="170dp"
+        android:background="@drawable/angle_button"
+        android:onClick="login"
+        android:text="@string/login_button"
+        android:textColor="#F8F8FF"
+        android:textSize="20sp" />
+
+	<Button
+        android:layout_width="260dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="110dp"
+        android:background="@drawable/angle_button"
+        android:onClick="unLogin"
+        android:text="暂不登录"
+        android:textColor="#F8F8FF"
+        android:textSize="20sp" />
+    
+    <EditText
+        android:id="@+id/account"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="290dp"
+        android:background="@drawable/et_underline_selector"
+        android:hint="@string/input_account_hint"
+        android:singleLine="true"
+        android:textSize="25sp" />
+    
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="230dp"
+        android:background="@drawable/et_underline_selector"
+        android:hint="@string/input_password_hint"
+        android:inputType="textPassword"
+        android:textSize="25sp" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="54dp"
+        android:background="#00000000"
+        android:textColor="@drawable/hello"
+        android:gravity="center"
+        android:onClick="register"
+        android:text="@string/new_user_register_button"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>
